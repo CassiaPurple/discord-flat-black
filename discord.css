@@ -1926,3 +1926,15 @@ div.scroller-wrap.fade {
 #user-profile-modal .guilds .section+.section {
     border-top: 1px solid #191919;
 }
+
+/* Message editing */
+.message-group .edit-message .channel-textarea {
+    background-color: #191919;
+    color: #fff;
+}
+.message-group .edit-message .channel-textarea-inner {
+    border: none;
+    background-color: #191919;
+    color: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+}
