@@ -1938,3 +1938,61 @@ div.scroller-wrap.fade {
     color: #fff;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
 }
+
+/* Quick and dirty fix for hammer and chisels amazing "improvements"*/
+/* New channel BG */
+.container-RYiLUQ,
+.containerDefault-7RImuF {
+    position: relative;
+    background: #191919;
+    box-shadow: none;
+    border-bottom: 0px solid #fff;
+    border-top: none;
+    opacity: 1;
+}
+/* Unread + no focus */
+.contentUnreadText-3oxASB {
+    border-left: 2px solid #fff;
+}
+/* Current textchannel */
+.contentSelectedText-3j5CXt {
+    background: transparent;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    border-left: 2px solid #ea5f14;
+}
+/* Current channels */
+.nameSelectedText-32NDX5,
+.colorSelectedText-3YhFC6,
+.nameSelectedVoice-XpjYTw,
+.colorSelectedVoice-ieXC3Z {
+    color: #ea5f14;
+    fill: #ea5f14;
+}
+/* Channel hover */
+.wrapperHoveredText-1PA_Uk * {
+    background: rgb(30,30,30);
+}
+/* Hide the unread dot */
+.unread-23Kvxk {
+    background: transparent;
+}
+
+/* New account section and voice channel limits */
+.container-iksrDt,
+.wrapper-2ldvyE {
+    background-color: #191919;
+}
+/* New DM selected / hovered */
+.private-channels.alt .channel.selected a,
+.private-channels .channel.selected a,
+.private-channels .channel a:hover,
+.private-channels.alt .channel a:hover {
+    background: transparent;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    border-left: 2px solid #ea5f14;
+}
+/* New RTC-Connection */
+.container-3lnMWU {
+    border: none;
+    background-color: #191919;
+}
