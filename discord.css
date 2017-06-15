@@ -1938,3 +1938,35 @@ div.scroller-wrap.fade {
     color: #fff;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
 }
+
+/* RTC stats */
+.popout header,
+#rtc-connection-popout section,
+.deprecated-settings-modal .settings-inner .settings-panel,
+.deprecated-settings-modal .settings-header,
+.deprecated-settings-modal .settings-actions,
+.tab-bar.SIDE,
+.form .control-group label,
+.tab-bar.SIDE .tab-bar-header,
+#rtc-debug-modal #users-section, #rtc-debug-modal #users-section .selected-user,
+.scroller-wrap .scroller,
+#rtc-debug-modal #users-section .user-list {
+    color: #fff !important;
+    overflow: auto;
+    border: none;
+    box-shadow: none;
+    background: #191919;
+}
+#rtc-debug-modal #users-section .user-list li.selected {
+    color: #fff !important;
+    overflow: auto;
+    border: none;
+    box-shadow: none;
+    background: #202020;
+}
+.form .control-group .help-text {
+    color: #bbb !important;
+}
+#rtc-debug-modal #users-section .user-list li:hover {
+    background: #202020;
+}
