@@ -1811,6 +1811,11 @@ div {
     background-color: transparent;
 }
 
+/* Fix the "No mutual servers" thing to be grey */
+#user-profile-modal .empty {
+    background: #191919;
+}
+
 .header-info {
     position: absolute;
     width: 215px!important;
@@ -1995,4 +2000,14 @@ div.scroller-wrap.fade {
 .container-3lnMWU {
     border: none;
     background-color: #191919;
+}
+
+/* Members search box */
+.theme-dark .ui-search-bar {
+    background: #202020;
+}
+/* Role Color Picker & Member list Role filter */
+.theme-dark .ui-color-picker-custom,
+.theme-dark .elevation-border-low {
+    background: #191919;
 }
