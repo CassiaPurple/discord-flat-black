@@ -2036,3 +2036,11 @@ div.scroller-wrap.fade {
 .theme-dark .elevation-border-low {
     background: #191919;
 }
+
+/* New chat box */
+.theme-dark .inner-3if5cm {
+    background: #191919;
+    border-radius: 0;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+}
+/* No current mention/emoji fix - will work out later */
