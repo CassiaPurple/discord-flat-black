@@ -1,3 +1,21 @@
+/*
+--  Color Substitutes  --
+Download a new copy or keep a backup,
+and when you want to change replace the
+default purple with one of the below
+
+Default Purple: #9f8bf1
+Darker Purple: #6631ab
+Dark Blue: #243887
+Light Blue: #4e9cd8
+Cyan: #12b7b7
+Aqua: #22aa7f
+Dark Green: #028200
+Yellow Green: #64af08
+Yellow: #ffff00
+Orange: #e78303
+*/
+
 /* put your custom css here. */
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
@@ -1609,6 +1627,13 @@ end user modal pop*/
     border:none;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
 }
+.scrollerWrap-2uBjct,
+.scroller-fzNley,
+.search-results-wrap .results-wrapper,
+.search-results-wrap .search-results,
+.search-results-wrap .search-result {
+    background-color: #191919;
+}
 
 .embed-wrapper{
     -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
@@ -2044,7 +2069,16 @@ div.scroller-wrap.fade {
     border-radius: 0;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
 }
-/* No current mention/emoji fix - will work out later */
+
+/* New autofill */
+.theme-dark .autocomplete-1TnWNR {
+    background-color: #191919;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+}
+.selectorSelected-2M0IGv {
+    background: transparent !important;
+    border-left: 4px solid #9f8bf1;
+}
 
 /* New upload modal */
 .upload-modal,
