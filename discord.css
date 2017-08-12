@@ -3,33 +3,43 @@
 	Download a new copy or keep a backup,
 	and when you want to change replace the
 	default purple with one of the below
+	
 	Default Purple: 
 	#9f8bf1
 	hsla(252, 78%, 75%, .1)
+
 	Darker Purple:
 	#6631ab
 	hsla(266, 55%, 43%, .1)
+
 	Dark Blue:
 	#243887
 	hsla(206, 64%, 58%, .1)
+
 	Light Blue:
 	#4e9cd8
 	hsla(206, 64%, 58%, .1)
+
 	Cyan:
 	#12b7b7
 	hsla(180, 82%, 39%, .1)
+
 	Aqua:
 	#22aa7f
 	hsla(161, 67%, 40%, .1)
+
 	Dark Green:
 	#028200
 	hsla(119, 100%, 25%, .1)
+
 	Yellow Green:
 	#64af08
 	hsla(87, 91%, 36%, .1)
+
 	Yellow:
 	#ffff00
 	hsla(60, 100%, 50%, .1)
+
 	Orange:
 	#e78303
 	hsla(34, 97%, 46%, .1)
@@ -1348,9 +1358,17 @@ background: #191919!important;
 	border:none;
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
 }
+.scrollerWrap-2uBjct,
+.scroller-fzNley,
+.search-results-wrap .results-wrapper,
+.search-results-wrap .search-results,
+.search-results-wrap .search-result {
+    background-color: #191919;
+}
+
 .embed-wrapper {
-	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
 }
 .channels-wrap .guild-channels .channel-voice.audio {
 	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
@@ -1724,6 +1742,17 @@ div.scroller-wrap.fade {
 	border-radius: 0;
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
 }
+
+/* New autofill */
+.theme-dark .autocomplete-1TnWNR {
+    background-color: #191919;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+}
+.selectorSelected-2M0IGv {
+    background: transparent !important;
+    border-left: 4px solid #9f8bf1;
+}
+
 /* New upload modal */
 .upload-modal,
 .upload-modal .footer,
