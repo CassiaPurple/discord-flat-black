@@ -331,7 +331,8 @@
 .theme-dark .chat .content .channel-members-wrap .channel-members .member .member-inner {
 	width: 155px
 }
-.theme-dark .chat .content .channel-members-wrap .channel-members .member:hover {
+.theme-dark .chat .content .channel-members-wrap .channel-members .member:hover,
+.theme-dark .channel-members .member.popout-open {
 	background: #191919;
 	border-radius: 5%
 }
@@ -341,7 +342,10 @@
 .theme-dark .chat .content .messages-wrapper .messages .markup pre {
 	border-color: #000
 }
-.theme-dark .chat .content .messages-wrapper .messages .markup pre .code {
+.theme-dark .chat .content .messages-wrapper .messages .markup pre .code,
+.theme-dark .message-group .comment .markup pre,
+.theme-dark .message-group .comment .markup code.inline,
+.theme-dark .message-group .comment .markup pre code {
 	background: #191919
 }
 .theme-dark .chat .content .messages-wrapper .messages .embed {
@@ -711,10 +715,30 @@
 div.tooltip.tooltip-normal:after {
 	border-color: transparent;
 }
-div.tooltip.tooltip-normal {
+.tooltip.tooltip-black,
+div.tooltip.tooltip-normal,
+.tooltip.tooltip-brand {
 	background: #191919;
 	color: #9f8bf1;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
+}
+.tooltip.tooltip-brand.tooltip:after,
+.popout.popout-bottom-left header:before,
+.popout.popout-bottom-right header:before,
+.popout.popout-bottom header:before,
+.tooltip.tooltip-black.tooltip:after {
+	border-color: transparent !important;
+}
+#autocomplete-popout .row.selected,
+#autocomplete-popout .row:hover {
+	background: #202020;
+}
+#autocomplete-popout .row.selected a,
+#autocomplete-popout .row:hover a {
+	color: #ccc !important;
+}
+.scroller-fzNley::-webkit-scrollbar {
+	width: 0px;
 }
 .channel-textarea-autocomplete-inner {
 	 background: #191919 !important;
@@ -1717,9 +1741,17 @@ div.scroller-wrap.fade {
 .wrapperHoveredText-1PA_Uk .foreground-2zy1hc {
 	opacity: 1;
 }
-.contentHoveredText-2HYGIY {
+.contentHoveredText-2HYGIY,
+.contentHoveredVoice-3qGNKh:active,
+.contentSelectedVoice-gTtYM9:active,
+.userHovered-3tfm93:active {
 	transition: all 250ms ease!important;
 	border-left: 2px solid #fff;
+	background: #202020;
+}
+.contentHoveredText-2HYGIY {
+	transition: all 250ms ease!important;
+	border-left: 2px solid #9f8bf1;
 	background: #202020;
 }
 /* Hide the unread dot */
