@@ -947,6 +947,9 @@ background: #191919!important;
 	background-color: transparent!important;
 }
 /* New settings menu */
+.container-_pT5TY {
+	min-height: 100px;
+}
 .theme-dark .ui-standard-sidebar-view .sidebar-region, .theme-dark .ui-standard-sidebar-view .sidebar-region .scrollbar {
 	background-color:rgba(0, 0, 0, 0.25) !important;
 }
@@ -1368,8 +1371,17 @@ background: #191919!important;
 	background-color: transparent;
 	box-shadow: none;
 }
-.theme-dark .themed-popout .footer {
+.theme-dark .themed-popout .footer,
+.ui-hover-card:hover:before {
 	background-color: #191919;
+}
+.itemDefaultSelected-1UAWLe {
+	background-color: #9f8bf1;
+}
+.ui-hover-card:hover:before {
+	/* transition: all 500ms ease;*/
+	background-color: #202020 !important;
+	border: none;
 }
  /* Search */
 .theme-dark .search-results-wrap .search-header,
@@ -1395,11 +1407,6 @@ background: #191919!important;
 	border:none;
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
 }
-.scrollerWrap-2uBjct,
-.scroller-fzNley {
-    background-color: #191919;
-}
-
 .embed-wrapper {
     -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
@@ -1940,3 +1947,39 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	margin-left:-150px;
 }
 /*-------------------------------------------*/
+
+/* Guild Join/Create Dialoge */
+.create-guild-container.deprecated .create-or-join .form-inner {
+	background-color: #191919
+}
+.create-guild-container.deprecated .action {
+	background-color: #202020
+}
+.create-guild-container.deprecated .create-or-join .actions .or {
+	background-image: url(https://cdn.discordapp.com/attachments/306049910082502656/357799369287794689/or.svg);
+}
+
+/* Keyboard combo menu */
+.keyboard-shortcuts-modal,
+.keybind-shortcut.dim span {
+	background-color: #191919;
+}
+.keybind-shortcut span,
+.keybind-shortcut.dim span {
+	border: 1px solid #aaaaaa;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+/* Quick switcher */
+.theme-dark .quickswitcher-2NdiGJ {
+	background-color: #191919
+}
+.theme-dark .input-MwQhcX {
+	background-color:#191919;
+	border: 0 !important;
+	border-radius: 0 !important;
+	color: #FFF !important;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+}
