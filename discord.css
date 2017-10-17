@@ -1985,3 +1985,21 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
 	-webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
 }
+
+/* Canary 10/17/17 Fixes */
+.wordmark-2L03Wr {
+	display:none !important;
+}
+
+.theme-dark .title-qAcLxz {
+	background:#191919;
+}
+
+.titleBar-3_fDwJ {
+	background:#191919;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .25), 0 -1px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.channelTextArea-os01xC {
+	margin: 15px 0 15px 0 !important;
+}
