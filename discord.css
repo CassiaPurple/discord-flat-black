@@ -2007,10 +2007,11 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	margin: 5px 0 25px 0 !important;
 }
 
-/* More classic version of the above: I like this more */
-/*
+/* More classic version of the above: I like this more 
+painful thing: you have 2px to drag the window */
+
 .typeWindows-15E0Ys {
-	height: 0px
+	height: 2px
 }
 .winButton-U7zAqI {
 	padding-right: 5px;
@@ -2019,4 +2020,3 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .header-toolbar {
 	padding-right: 100px;
 }
-*/
