@@ -423,7 +423,8 @@
 }
 .theme-dark .chat .content form {
 	border-top: none;
-	box-shadow: none
+	box-shadow: none;
+	background: transparent;
 }
 .theme-dark .chat .content form .typing {
 	background-color: transparent !important;
