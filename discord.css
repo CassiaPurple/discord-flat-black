@@ -2009,7 +2009,7 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 
 /* More classic version of the above: I like this more 
 painful thing: you have 2px to drag the window */
-
+/*
 .typeWindows-15E0Ys {
 	height: 2px
 }
@@ -2020,3 +2020,11 @@ painful thing: you have 2px to drag the window */
 .header-toolbar {
 	padding-right: 100px;
 }
+.theme-dark .title-qAcLxz {
+	background:var(--dark-primary);
+}
+
+.titleBar-3_fDwJ {
+	background:var(--dark-primary);
+}
+*/
