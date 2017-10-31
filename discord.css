@@ -2002,6 +2002,7 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .titleBar-3_fDwJ {
 	background:var(--dark-primary);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .25), 0 -1px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 1px rgba(255, 255, 255, 0.1) inset;
+	margin-top: 0;
 }
 
 .channelTextArea-os01xC {
@@ -2016,8 +2017,9 @@ painful thing: you have 2px to drag the window */
 }
 .winButton-U7zAqI {
 	padding-right: 5px;
-	padding-top: 12px;
+	padding-top: 17px;
 }
+.theme-dark .title-qAcLxz,
 .header-toolbar {
 	padding-right: 100px;
 }
@@ -2029,3 +2031,6 @@ painful thing: you have 2px to drag the window */
 	background:var(--dark-primary);
 }
 */
+.image-EVRGPw {
+	-webkit-mask: none;
+}
