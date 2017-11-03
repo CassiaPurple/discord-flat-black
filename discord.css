@@ -2031,9 +2031,6 @@ painful thing: you have 2px to drag the window */
 	background:var(--dark-primary);
 }
 */
-.image-EVRGPw {
+.image-EVRGPw, .mask-2vyqAW {
 	-webkit-mask: none;
-}
-.mask-2vyqAW {
-	mask: none;
 }
