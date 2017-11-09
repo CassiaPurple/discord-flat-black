@@ -1995,6 +1995,7 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	display:none !important;
 }
 
+.theme-dark .headerBar-cxbhPD,
 .theme-dark .title-qAcLxz {
 	background:var(--dark-primary);
 }
@@ -2010,7 +2011,7 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 }
 
 /* More classic version of the above: I like this more 
-painful thing: you have 2px to drag the window */
+painful thing: you can't click the channel topic */
 /*
 .typeWindows-15E0Ys {
 	height: 2px
@@ -2019,12 +2020,11 @@ painful thing: you have 2px to drag the window */
 	padding-right: 5px;
 	padding-top: 17px;
 }
-.theme-dark .title-qAcLxz,
-.header-toolbar {
-	padding-right: 100px;
-}
+.theme-dark .headerBar-cxbhPD,
 .theme-dark .title-qAcLxz {
 	background:var(--dark-primary);
+	padding-right: 100px;
+	-webkit-app-region: drag;
 }
 
 .titleBar-3_fDwJ {
@@ -2033,4 +2033,30 @@ painful thing: you have 2px to drag the window */
 */
 .image-EVRGPw, .mask-2vyqAW {
 	-webkit-mask: none;
+}
+
+/* New invite preview */
+.theme-dark .wrapper-uAa07y {
+	background-color: var(--dark-primary);
+	border: none;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.theme-dark .buttonPrimaryFilledDefault-ekmMaT,
+.button-NA7MEa {
+	border: 1px solid var(--accent);
+	background-color: transparent;
+	color:var(--accent);
+	opacity: 1;
+}
+
+.theme-dark .buttonPrimaryFilledDefault-ekmMaT:hover,
+.theme-dark .buttonPrimaryFilledDefault-ekmMaT:active,
+.button-NA7MEa:hover,
+.button-NA7MEa:active {
+	transition: opacity 5s ease;
+	border: 1px solid var(--accent);
+	background-color: var(--accent);
+	color:var(--dark-secondary);
+	opacity: 0.75;
 }
