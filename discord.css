@@ -1995,14 +1995,8 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	display:none !important;
 }
 
-.theme-dark .headerBar-cxbhPD,
-.theme-dark .title-qAcLxz {
-	background:var(--dark-primary);
-}
-
 .titleBar-3_fDwJ {
 	background:var(--dark-primary);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, .25), 0 -1px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 1px rgba(255, 255, 255, 0.1) inset;
 	margin-top: 0;
 }
 
@@ -2010,9 +2004,6 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	margin: 5px 0 25px 0 !important;
 }
 
-/* More classic version of the above: I like this more 
-painful thing: you can't click the channel topic */
-/*
 .typeWindows-15E0Ys {
 	height: 2px
 }
@@ -2027,10 +2018,6 @@ painful thing: you can't click the channel topic */
 	-webkit-app-region: drag;
 }
 
-.titleBar-3_fDwJ {
-	background:var(--dark-primary);
-}
-*/
 .image-EVRGPw, .mask-2vyqAW {
 	-webkit-mask: none;
 }
