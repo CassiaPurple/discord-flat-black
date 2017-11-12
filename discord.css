@@ -2010,40 +2010,24 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	margin: 5px 0 25px 0 !important;
 }
 
-/* More classic version of the above: I like this more 
-painful thing: you can't click the channel topic */
-/*
-.typeWindows-15E0Ys {
-	height: 2px
-}
-.winButton-U7zAqI {
-	padding-right: 5px;
-	padding-top: 17px;
-}
-.theme-dark .headerBar-cxbhPD,
-.theme-dark .title-qAcLxz {
-	background:var(--dark-primary);
-	padding-right: 100px;
-	-webkit-app-region: drag;
-}
-
-.titleBar-3_fDwJ {
-	background:var(--dark-primary);
-}
-*/
 .image-EVRGPw, .mask-2vyqAW {
 	-webkit-mask: none;
 }
 
 /* New invite preview */
-.theme-dark .wrapper-uAa07y {
+.theme-dark .wrapper-uAa07y,
+.theme-dark .attachPopout-gjwHsr,
+.theme-dark .preview-1mYYph,
+.theme-dark .elevationLow-5GEz9e,
+.invite-CTGItT {
 	background-color: var(--dark-primary);
 	border: none;
 	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.8);
 }
 
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT,
-.button-NA7MEa {
+.button-NA7MEa,
+.actionButton-2XHRWc {
 	border: 1px solid var(--accent);
 	background-color: transparent;
 	color:var(--accent);
@@ -2053,10 +2037,16 @@ painful thing: you can't click the channel topic */
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT:hover,
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT:active,
 .button-NA7MEa:hover,
-.button-NA7MEa:active {
+.button-NA7MEa:active,
+.actionButton-2XHRWc:hover,
+.actionButton-2XHRWc:active {
 	transition: opacity 5s ease;
 	border: 1px solid var(--accent);
 	background-color: var(--accent);
 	color:var(--dark-secondary);
 	opacity: 0.75;
+}
+
+.theme-dark .attachPopoutRow-elxASe:hover {
+	background-color: var(--accent);
 }
