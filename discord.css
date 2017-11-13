@@ -2011,9 +2011,9 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	padding-right: 5px;
 	padding-top: 17px;
 }
-.headerBar-cxbhPD,
-.title-qAcLxz,
-.titleCall-3X0yGQ {
+.theme-dark .headerBar-cxbhPD,
+.theme-dark .title-qAcLxz,
+.theme-dark .titleCall-3X0yGQ {
 	background:var(--dark-primary);
 	padding-right: 100px;
 	-webkit-app-region: drag;
