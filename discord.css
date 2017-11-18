@@ -1780,7 +1780,8 @@ div.scroller-wrap.fade {
 .private-channels.alt .channel.selected a,
 .private-channels .channel.selected a,
 .private-channels .channel a:hover,
-.private-channels.alt .channel a:hover {
+.private-channels.alt .channel a:hover,
+.private-channels .channel:hover a {
 	background: #202020;
 	border-left: 2px solid var(--accent);
 	transition: all 250ms ease!important;
@@ -2013,6 +2014,35 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .image-EVRGPw, .mask-2vyqAW {
 	-webkit-mask: none;
 }
+
+/* Alternate fix (sets the channel topic as draggable) *//*
+.wordmark-2L03Wr {
+    display:none !important;
+}
+.titleBar-3_fDwJ,
+.theme-dark .chat {
+    background:var(--dark-primary);
+    margin-top: 0;
+}
+.channelTextArea-os01xC {
+    margin: 5px 0 25px 0 !important;
+}
+.typeWindows-15E0Ys {
+    height: 0px
+}
+.winButton-U7zAqI {
+    padding-right: 5px;
+    padding-top: 17px;
+}
+.titleWrapper-3Vi_wz {
+    padding-right: 100px;
+}
+.theme-dark .headerBar-cxbhPD,
+.theme-dark .title-qAcLxz,
+.theme-dark .titleCall-3X0yGQ {
+    background-color: var(--dark-primary);
+    -webkit-app-region: drag;
+}*/
 
 /* New invite preview */
 .theme-dark .wrapper-uAa07y,
