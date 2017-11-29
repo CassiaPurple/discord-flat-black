@@ -601,7 +601,8 @@
 	background-color:var(--dark-primary);
 	color: var(--accent);
 }
-.member-roles .member-role {
+.member-roles .member-role,
+.theme-dark .rolesList-2YHFg5 .member-role {
 	color: var(--accent);
 	background-color:var(--dark-primary);
 	border-color: var(--accent);
@@ -1086,8 +1087,11 @@ background: var(--dark-primary)!important;
 	background: var(--dark-primary);
 }
 .user-popout .body .section .label,
-.bodyTitleText-hSiL7d {
-	color:var(--accent);
+.bodyTitleText-hSiL7d,
+.headerText-2CVBxK,
+.activityProfile-2pymp0 .headerText-2CVBxK,
+.activityUserPopout-1nmgaw .headerText-2CVBxK {
+	color:var(--accent) !important;
 }
 .user-popout .footer {
 	background: var(--dark-primary);
@@ -1201,6 +1205,10 @@ background: var(--dark-primary)!important;
 .user-popout .header.streaming {
 	background-color: #593695 !important;
 	box-shadow: inset 0px 2px 0 0px rgba(255,255,255,.1);
+}
+.bodyTitleIconForeground-itKW-t,
+.headerIconForeground-2QFL0Z {
+	fill: var(--accent) !important;
 }
 /* Buttons in the account area are now given icons inline, removing our ability to add custom ones over the top */
 #rtc-connection .btn-info:after,
