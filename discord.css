@@ -601,7 +601,8 @@
 	background-color:var(--dark-primary);
 	color: var(--accent);
 }
-.member-roles .member-role {
+.member-roles .member-role,
+.theme-dark .rolesList-2YHFg5 .member-role {
 	color: var(--accent);
 	background-color:var(--dark-primary);
 	border-color: var(--accent);
@@ -1086,8 +1087,11 @@ background: var(--dark-primary)!important;
 	background: var(--dark-primary);
 }
 .user-popout .body .section .label,
-.bodyTitleText-hSiL7d {
-	color:var(--accent);
+.bodyTitleText-hSiL7d,
+.headerText-2CVBxK,
+.activityProfile-2pymp0 .headerText-2CVBxK,
+.activityUserPopout-1nmgaw .headerText-2CVBxK {
+	color:var(--accent) !important;
 }
 .user-popout .footer {
 	background: var(--dark-primary);
@@ -1201,6 +1205,10 @@ background: var(--dark-primary)!important;
 .user-popout .header.streaming {
 	background-color: #593695 !important;
 	box-shadow: inset 0px 2px 0 0px rgba(255,255,255,.1);
+}
+.bodyTitleIconForeground-itKW-t,
+.headerIconForeground-2QFL0Z {
+	fill: var(--accent) !important;
 }
 /* Buttons in the account area are now given icons inline, removing our ability to add custom ones over the top */
 #rtc-connection .btn-info:after,
@@ -1869,241 +1877,239 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	background-color: var(--accent);
 }
 
-/* Kaos will fix later, or if someone else wants to go ahead */
-	/*user profile modal*/
-	#user-profile-modal .header:after {
-		visibility: hidden;
-	}
-	.avatar-wrapper {
-		background-color: transparent!important;
-	}
-	#user-profile-modal .header {
-		background-color: var(--dark-primary)!important;
-		background-image: none;
-		width: 200px;
-		height: 546px;
-		overflow: hidden;
-	}
-	#user-profile-modal {
-		display: flex;
-		flex-direction: row;
-		width: 750px;
-	}
-	.tab-bar-container {
-		display: inline!important;
-		padding: 0;
-		margin: 0;
-		background: var(--dark-primary)!important;
-	}
-	#user-profile-modal .tab-bar .tab-bar-item.selected {
-		color: var(--accent);
-	}
-	#user-profile-modal .guilds .guild:hover {
-		background: #202020;
-		color: #fff;
-	}
-	#user-profile-modal .tab-bar .tab-bar-item {
-		color: #FFF;
-		background: var(--dark-primary)!important;
-	}
-	#user-profile-modal .scroller,
-	#user-profile-modal >
-	div.tab-bar-container >
-	div {
-		width: 350px;
-	}
-	#user-profile-modal .header .additional-actions-icon:after {
-		content: '';
-		width: 18px;
-		height: 18px;
-		display: inline-block;
-		z-index: 5;
-		position: absolute;
-		top: 15px;
-		right: calc(50% - 9px);
-		background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_white_24px.svg);
-		background-size: cover;
-		transition: all .2s ease;
-	}
-	#user-profile-modal .header .additional-actions-icon:hover:after {
-		width: 24px;
-		height: 24px;
-		top: 12px;
-		right: calc(50% - 12px);
-		transition: all .2s ease;
-	}
-	#user-profile-modal .header .additional-actions-icon:before {
-		content: 'Actions';
-		color: #fff;
-		line-height: 24px;
-		transition: all .2s ease;
-	}
-	#user-profile-modal .header .additional-actions-icon:hover:before {
-		font-size: 20px;
-		line-height: 18px;
-		transition: all .2s ease;
-	}
-	#user-profile-modal .header .additional-actions-icon {
-		left: 0px;
-		top: 0px;
-		display: block;
-		width: 203px;
-		background-image: linear-gradient(to bottom, var(--dark-primary) 0%, var(--dark-primary) 100%);
-		text-align: center;
-		line-height: 24px;
-		transition: background-image .2s ease;
-	}
-	#user-profile-modal .tab-bar-container {
-		box-shadow: none;
-		padding-right: 332px;
-		border-top-right-radius: 5px;
-		border-bottom: 1px solid var(--dark-primary);
-	}
-	#user-profile-modal .guilds .section .connected-accounts .connected-account {
-		margin-left: 20px;
-	}
-	#user-profile-modal >
-	div.tab-bar-container >
-	div {
-		margin: 0!important;
-		left: 230px!important;
-		position: absolute;
-		background-color: var(--dark-primary)!important;
-		z-index: 99!important;
-		width: 335px;
-		border-top-right-radius: 5px;
-	}
-	#user-profile-modal .header .header-info .badge-premium {
-		position: absolute;
-		top: -150px;
-		left: 15px;
-	}
-	#user-profile-modal .actions .btn.add-friend {
-		position: absolute;
-		left: 30px;
-		top: 30em;
-	}
-	#user-profile-modal .empty {
-		position: relative;
-		width: 660px;
-		right: 545px;
-		padding-left: 219px;
-		padding-right: 218px;
-		border-bottom-right-radius: 5px;
-		border-top-right-radius: 5px;
-	}
-	#user-profile-modal .empty .spinner {
-		margin: 33px;
-	}
-	#user-profile-modal .header .header-info .header-info-inner {
-		position: absolute;
-	}
-	#user-profile-modal .guilds .avatar-large {
-		background-color: transparent;
-	}
-	
-	/* Fix the "No mutual servers" thing to be grey */
-	#user-profile-modal .empty {
-		background: var(--dark-primary);
-	}
-	.header-info {
-		position: absolute;
-		width: 215px!important;
-		left: 0px;
-		text-align: center;
-		margin-top: -80px;
-		color: white!important;
-	}
-	.header-info-inner,
-	.header-info-inner.activity {
-		width: 215px!important;
-		color: white;
-	}
-	.header-info-inner .discord-tag {
-		color: white!important;
-	}
-	.header-info-inner .activity {
-		padding-left: 0;
-		padding-right: 0;
-		width: 215px!important;
-	}
-	.header-info .profile-badge:not(.badge-premium) {
-		width: 100%!important;
-		margin-top: 150px;
-		margin-right: 0!important;
-		background-position-x: 50%!important;
-		height: 50px!important;
-		background-size: contain;
-		background-color: var(--dark-primary);
-		z-index: 2;
-		transition: all .2s ease;
-	}
-	.header-info .profile-badge:not(.badge-premium):before {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 50px;
-		margin-left: 0%;
-		box-shadow: var(--dark-primary) 0px 0px 20px 0px;
-		z-index: 1;
-		transition: all .2s ease;
-	}
-	.header-info .profile-badge:hover:not(.badge-premium) {
-		background-color: var(--dark-primary);
-		transition: all .2s ease;
-	}
-	.header-info .profile-badge:hover:not(.badge-premium):before {
-		box-shadow: var(--dark-primary) 0px 0px 20px 0px;
-		transition: all .2s ease;
-	}
-	#user-profile-modal >
-	div.scroller-wrap.fade {
-		height: 487px!important;
-		top: 55px;
-		border-top: var(--dark-primary) 4px solid!important;
-		margin-left: -3px;
-		left: -542px;
-		border-bottom-right-radius: 5px;
-	}
-	#user-profile-modal .scroller {
-		border-bottom-right-radius: 5px;
-		width: 535px;
-	}
-	#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(odd) {
-		margin-left: 18px;
-	}
-	#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(even) {
-		margin-right: 15px;
-	}
-	#user-profile-modal .scroller .section:nth-child(2) {
-		margin-right: 5px;
-		margin-left: 10px;
-	}
-	.scroller.guilds {
-		width: 450px;
-	}
-	.btn-add-friend {
-		left: 0!important;
-		position: absolute!important;
-	}
-	#user-profile-modal .scroller {
-		background: var(--dark-primary) 
-	}
-	#user-profile-modal .guilds .section .connected-accounts .connected-account {
-		-webkit-border-radius: 3px;
-		border-radius: 0px;
-		border: 0px!important;
-		-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
-		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
-	}
-	#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name {
-		font-size: 18px;
-		color: #fff;
-	}
-	#user-profile-modal .guilds .section+.section {
-		border-top: 1px solid var(--dark-primary);
-	}
-/**/
+/*user profile modal*/
+#user-profile-modal .header:after {
+	visibility: hidden;
+}
+.avatar-wrapper {
+	background-color: transparent!important;
+}
+#user-profile-modal .header {
+	background-color: var(--dark-primary)!important;
+	background-image: none;
+	width: 200px;
+	height: 546px;
+	overflow: hidden;
+}
+#user-profile-modal {
+	display: flex;
+	flex-direction: row;
+	width: 750px;
+}
+.tab-bar-container {
+	display: inline!important;
+	padding: 0;
+	margin: 0;
+	background: var(--dark-primary)!important;
+}
+#user-profile-modal .tab-bar .tab-bar-item.selected {
+	color: var(--accent);
+}
+#user-profile-modal .guilds .guild:hover {
+	background: #202020;
+	color: #fff;
+}
+#user-profile-modal .tab-bar .tab-bar-item {
+	color: #FFF;
+	background: var(--dark-primary)!important;
+}
+#user-profile-modal .scroller,
+#user-profile-modal >
+div.tab-bar-container >
+div {
+	width: 350px;
+}
+#user-profile-modal .header .additional-actions-icon:after {
+	content: '';
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	z-index: 5;
+	position: absolute;
+	top: 15px;
+	right: calc(50% - 9px);
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_white_24px.svg);
+	background-size: cover;
+	transition: all .2s ease;
+}
+#user-profile-modal .header .additional-actions-icon:hover:after {
+	width: 24px;
+	height: 24px;
+	top: 12px;
+	right: calc(50% - 12px);
+	transition: all .2s ease;
+}
+#user-profile-modal .header .additional-actions-icon:before {
+	content: 'Actions';
+	color: #fff;
+	line-height: 24px;
+	transition: all .2s ease;
+}
+#user-profile-modal .header .additional-actions-icon:hover:before {
+	font-size: 20px;
+	line-height: 18px;
+	transition: all .2s ease;
+}
+#user-profile-modal .header .additional-actions-icon {
+	left: 0px;
+	top: 0px;
+	display: block;
+	width: 203px;
+	background-image: linear-gradient(to bottom, var(--dark-primary) 0%, var(--dark-primary) 100%);
+	text-align: center;
+	line-height: 24px;
+	transition: background-image .2s ease;
+}
+#user-profile-modal .tab-bar-container {
+	box-shadow: none;
+	padding-right: 332px;
+	border-top-right-radius: 5px;
+	border-bottom: 1px solid var(--dark-primary);
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account {
+	margin-left: 20px;
+}
+#user-profile-modal >
+div.tab-bar-container >
+div {
+	margin: 0!important;
+	left: 230px!important;
+	position: absolute;
+	background-color: var(--dark-primary)!important;
+	z-index: 99!important;
+	width: 335px;
+	border-top-right-radius: 5px;
+}
+#user-profile-modal .header .header-info .badge-premium {
+	position: absolute;
+	top: -150px;
+	left: 15px;
+}
+#user-profile-modal .actions .btn.add-friend {
+	position: absolute;
+	left: 30px;
+	top: 30em;
+}
+#user-profile-modal .empty {
+	position: relative;
+	width: 660px;
+	right: 545px;
+	padding-left: 219px;
+	padding-right: 218px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#user-profile-modal .empty .spinner {
+	margin: 33px;
+}
+#user-profile-modal .header .header-info .header-info-inner {
+	position: absolute;
+}
+#user-profile-modal .guilds .avatar-large {
+	background-color: transparent;
+}
+
+/* Fix the "No mutual servers" thing to be grey */
+#user-profile-modal .empty {
+	background: var(--dark-primary);
+}
+.header-info {
+	position: absolute;
+	width: 215px!important;
+	left: 0px;
+	text-align: center;
+	margin-top: -80px;
+	color: white!important;
+}
+.header-info-inner,
+.header-info-inner.activity {
+	width: 215px!important;
+	color: white;
+}
+.header-info-inner .discord-tag {
+	color: white!important;
+}
+.header-info-inner .activity {
+	padding-left: 0;
+	padding-right: 0;
+	width: 215px!important;
+}
+.header-info .profile-badge:not(.badge-premium) {
+	width: 100%!important;
+	margin-top: 150px;
+	margin-right: 0!important;
+	background-position-x: 50%!important;
+	height: 50px!important;
+	background-size: contain;
+	background-color: var(--dark-primary);
+	z-index: 2;
+	transition: all .2s ease;
+}
+.header-info .profile-badge:not(.badge-premium):before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin-left: 0%;
+	box-shadow: var(--dark-primary) 0px 0px 20px 0px;
+	z-index: 1;
+	transition: all .2s ease;
+}
+.header-info .profile-badge:hover:not(.badge-premium) {
+	background-color: var(--dark-primary);
+	transition: all .2s ease;
+}
+.header-info .profile-badge:hover:not(.badge-premium):before {
+	box-shadow: var(--dark-primary) 0px 0px 20px 0px;
+	transition: all .2s ease;
+}
+#user-profile-modal >
+div.scroller-wrap.fade {
+	height: 487px!important;
+	top: 55px;
+	border-top: var(--dark-primary) 4px solid!important;
+	margin-left: -3px;
+	left: -542px;
+	border-bottom-right-radius: 5px;
+}
+#user-profile-modal .scroller {
+	border-bottom-right-radius: 5px;
+	width: 535px;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(odd) {
+	margin-left: 18px;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(even) {
+	margin-right: 15px;
+}
+#user-profile-modal .scroller .section:nth-child(2) {
+	margin-right: 5px;
+	margin-left: 10px;
+}
+.scroller.guilds {
+	width: 450px;
+}
+.btn-add-friend {
+	left: 0!important;
+	position: absolute!important;
+}
+#user-profile-modal .scroller {
+	background: var(--dark-primary) 
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account {
+	-webkit-border-radius: 3px;
+	border-radius: 0px;
+	border: 0px!important;
+	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name {
+	font-size: 18px;
+	color: #fff;
+}
+#user-profile-modal .guilds .section+.section {
+	border-top: 1px solid var(--dark-primary);
+}
 
 .header-2Lg0Oe,
 .tabBarContainer-3RVZc-,
@@ -2117,7 +2123,116 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
     color: var(--accent);
 }
 
+/* New Profile Modal */
 
+.root-2sNHUF {
+	width:768px;
+	height:512px;
+	flex-direction: row;
+	background: var(--dark-primary);
+}
+
+.topSectionPlaying-3jAH9b,
+.topSectionNormal-2LlRG1,
+.topSectionStreaming-3rIBIm {
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+}
+
+.headerInfo-Gkqcz9 {
+	display:flex;
+	flex-direction: column;
+	padding: 10px 0px 10px 0px;
+	align-items:center;
+}
+
+.topSectionPlaying-3jAH9b .header-2Lg0Oe,
+.topSectionNormal-2LlRG1 .header-2Lg0Oe,
+.topSectionStreaming-3rIBIm .header-2Lg0Oe {
+	width:256px;
+	padding: 40px 0px 10px 0px;
+	display: flex;
+	flex-direction: column;
+	margin:0;
+	top:0;
+	align-items:center;
+}
+
+.header-2Lg0Oe .avatar-4g_GO6 {
+	margin:0;
+}
+
+.topSectionPlaying-3jAH9b .headerFill-TTyrtz .tabBarContainer-3RVZc-,
+.topSectionNormal-2LlRG1 .headerFill-TTyrtz .tabBarContainer-3RVZc-,
+.topSectionStreaming-3rIBIm .headerFill-TTyrtz .tabBarContainer-3RVZc-,
+.topSectionNormal-2LlRG1 > div .tabBarContainer-3RVZc- {
+	position: absolute;
+	left:256px;
+	width:512px;
+	top:0px;
+}
+
+.body-3_tdh6 {
+	display:flex;
+	position: absolute;
+	width:512px;
+	left: 256px;
+	top:55px;
+	height:100%;
+}
+
+.activityProfile-2pymp0 {
+	padding:0;
+	width:256px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.activityProfile-2pymp0 .directionRow-yNbSvJ:first-of-type + .directionRow-yNbSvJ {
+	flex-direction: column;
+	align-items: center;
+}
+
+.topSectionStreaming-3rIBIm .headerFill-TTyrtz .activityProfile-2pymp0 .directionRow-yNbSvJ:first-of-type + .directionRow-yNbSvJ {
+	flex-direction: column;
+	align-items: center;
+	display:flex;
+}
+
+.activityProfile-2pymp0 .content-P9ThHS {
+	padding-bottom:10px;
+	text-align: center;
+}
+
+.topSectionStreaming-3rIBIm .headerFill-TTyrtz .activityProfile-2pymp0 .directionRow-yNbSvJ:first-of-type + .directionRow-yNbSvJ > .flex-lFgbSz {
+	margin-left:0 !important;
+}
+
+.contentImagesActivityFeed-1niwqe, .contentImagesProfile-11JToa {
+	margin:0;
+	align-items: center;
+	width:inital;
+	overflow: hidden;
+	text-align:center;
+	padding-top:10px;
+}
+
+.activityProfile-2pymp0 .directionRow-yNbSvJ:first-of-type + .directionRow-yNbSvJ > .flex-lFgbSz {
+	flex-direction: row;
+}
+
+.contentImagesActivityFeed-1niwqe .ellipsis-CYOqEr,
+.contentImagesProfile-11JToa .ellipsis-CYOqEr {
+	white-space: normal;
+	overflow:visible;
+	overflow-wrap: normal;
+	text-overflow:clip;
+}
+
+.image-EVRGPw {
+	border-radius: 25%;
+}
 
 /* BUTTONS */
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT,
@@ -2130,7 +2245,11 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .private-channel-call .private-channel-call-actions .button-join,
 .form.deprecated .btn-primary,
 .create-guild-container.deprecated .join-server .btn-primary,
-.region-select {
+.region-select,
+.region-select,
+.theme-dark .buttonPrimaryInvertedDefault-1XlpVq,
+.theme-dark .buttonPrimaryInvertedDisabled-pTWgC9,
+.theme-dark .buttonPrimaryInvertedSubmitting-3j1QEG {
 	border: 1px solid var(--accent);
 	background-color: transparent;
 	color:var(--accent);
@@ -2154,7 +2273,7 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT:hover,
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT:active,
-.button-NA7MEa:hover,
+divbutton-NA7MEa:hover,
 .button-NA7MEa:active,
 .actionButton-2XHRWc:hover,
 .actionButton-2XHRWc:active,
@@ -2168,56 +2287,16 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .create-guild-container.deprecated .join-server .btn-primary:hover,
 .region-select:hover,
 .region-select:hover button,
-.region-select:hover .region-select-name {
+.region-select:hover .region-select-name,
+.region-select button:hover,
+.theme-dark .buttonPrimaryInvertedDefault-1XlpVq:hover,
+.theme-dark .buttonPrimaryInvertedDisabled-pTWgC9:hover,
+.theme-dark .buttonPrimaryInvertedSubmitting-3j1QEG:hover {
 	transition: opacity 5s ease;
 	border: 1px solid var(--accent);
 	background-color: var(--accent)!important;
 	color:var(--dark-secondary);
 	opacity: 0.75;
-}
-
-.avatar-large[style*="81440962496172032"] + .comment .message.first .body .username-wrapper .user-name,
-.member > .avatar-small[style*="81440962496172032"] + .member-inner .member-username,
-.member > .avatar-small[style*="81440962496172032"] + .member-inner .member-username-inner,
-.avatar-small[style*="81440962496172032"] + .channel-name {
-	color: pink !important;
-	font-family: 'Comic Sans MS' !important;
-}
-
-.avatar-large[style*="184632227894657025"] + .comment .message.first .body .username-wrapper .user-name,
-.member > .avatar-small[style*="184632227894657025"] + .member-inner .member-username,
-.member > .avatar-small[style*="184632227894657025"] + .member-inner .member-username-inner,
-.avatar-small[style*="184632227894657025"] + .channel-name {
-	color: #4fff00 !important;
-	font-family: 'Comic Sans MS' !important;
-}
-
-.avatar-large[style*="132368482120499201"] + .comment .message.first .body .username-wrapper .user-name,
-.member > .avatar-small[style*="132368482120499201"] + .member-inner .member-username,
-.member > .avatar-small[style*="132368482120499201"] + .member-inner .member-username-inner,
-.avatar-small[style*="132368482120499201"] + .channel-name {
-	color: #d9c252 !important;
-	font-family: 'Comic Sans MS' !important;
-}
-
-.avatar-large[style*="305227385979273217"] + .comment .message.first .body .username-wrapper .user-name,
-.member > .avatar-small[style*="305227385979273217"] + .member-inner .member-username,
-.member > .avatar-small[style*="305227385979273217"] + .member-inner .member-username-inner,
-.avatar-small[style*="305227385979273217"] + .channel-name,
-.avatar-large[style*="151344471957569536"] + .comment .message.first .body .username-wrapper .user-name,
-.member > .avatar-small[style*="151344471957569536"] + .member-inner .member-username,
-.member > .avatar-small[style*="151344471957569536"] + .member-inner .member-username-inner,
-.avatar-small[style*="151344471957569536"] + .channel-name {
-	color: #9f8bf1 !important;
-	font-family: 'Comic Sans MS' !important;
-}
-
-.avatar-large[style*="86890631690977280"] + .comment .message.first .body .username-wrapper .user-name,
-.member > .avatar-small[style*="86890631690977280"] + .member-inner .member-username,
-.member > .avatar-small[style*="86890631690977280"] + .member-inner .member-username-inner,
-.avatar-small[style*="86890631690977280"] + .channel-name {
-	color: #E8506A !important;
-	font-family: 'Comic Sans MS' !important;
 }
 
 .theme-dark .private-channel-recipients-invite .friend.selected,
