@@ -2135,7 +2135,8 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 }
 
 .topSectionPlaying-3jAH9b,
-.topSectionNormal-2LlRG1 {
+.topSectionNormal-2LlRG1,
+.topSectionStreaming-3rIBIm {
 	background: transparent;
 	display: flex;
 	flex-direction: column;
@@ -2149,7 +2150,8 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 }
 
 .topSectionPlaying-3jAH9b .header-2Lg0Oe,
-.topSectionNormal-2LlRG1 .header-2Lg0Oe {
+.topSectionNormal-2LlRG1 .header-2Lg0Oe,
+.topSectionStreaming-3rIBIm .header-2Lg0Oe {
 	width:256px;
 	padding: 40px 0px 10px 0px;
 	display: flex;
@@ -2165,6 +2167,7 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 
 .topSectionPlaying-3jAH9b .headerFill-TTyrtz .tabBarContainer-3RVZc-,
 .topSectionNormal-2LlRG1 .headerFill-TTyrtz .tabBarContainer-3RVZc-,
+.topSectionStreaming-3rIBIm .headerFill-TTyrtz .tabBarContainer-3RVZc-,
 .topSectionNormal-2LlRG1 > div .tabBarContainer-3RVZc- {
 	position: absolute;
 	left:256px;
@@ -2191,6 +2194,21 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .activityProfile-2pymp0 .directionRow-yNbSvJ:first-of-type + .directionRow-yNbSvJ {
 	flex-direction: column;
 	align-items: center;
+}
+
+.topSectionStreaming-3rIBIm .headerFill-TTyrtz .activityProfile-2pymp0 .directionRow-yNbSvJ:first-of-type + .directionRow-yNbSvJ {
+	flex-direction: column;
+	align-items: center;
+	display:flex;
+}
+
+.activityProfile-2pymp0 .content-P9ThHS {
+	padding-bottom:10px;
+	text-align: center;
+}
+
+.topSectionStreaming-3rIBIm .headerFill-TTyrtz .activityProfile-2pymp0 .directionRow-yNbSvJ:first-of-type + .directionRow-yNbSvJ > .flex-lFgbSz {
+	margin-left:0 !important;
 }
 
 .contentImagesActivityFeed-1niwqe, .contentImagesProfile-11JToa {
@@ -2228,7 +2246,10 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .private-channel-call .private-channel-call-actions .button-exit,
 .private-channel-call .private-channel-call-actions .button-join,
 .form.deprecated .btn-primary,
-.region-select {
+.region-select,
+.theme-dark .buttonPrimaryInvertedDefault-1XlpVq,
+.theme-dark .buttonPrimaryInvertedDisabled-pTWgC9,
+.theme-dark .buttonPrimaryInvertedSubmitting-3j1QEG {
 	border: 1px solid var(--accent);
 	background-color: transparent;
 	color:var(--accent);
@@ -2237,7 +2258,7 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT:hover,
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT:active,
-.button-NA7MEa:hover,
+divbutton-NA7MEa:hover,
 .button-NA7MEa:active,
 .actionButton-2XHRWc:hover,
 .actionButton-2XHRWc:active,
@@ -2248,7 +2269,10 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .private-channel-call .private-channel-call-actions .button-exit:hover,
 .private-channel-call .private-channel-call-actions .button-join:hover,
 .form.deprecated .btn-primary:hover,
-.region-select button:hover {
+.region-select button:hover,
+.theme-dark .buttonPrimaryInvertedDefault-1XlpVq:hover,
+.theme-dark .buttonPrimaryInvertedDisabled-pTWgC9:hover,
+.theme-dark .buttonPrimaryInvertedSubmitting-3j1QEG:hover {
 	transition: opacity 5s ease;
 	border: 1px solid var(--accent);
 	background-color: var(--accent)!important;
