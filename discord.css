@@ -2129,11 +2129,27 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .private-channel-call .private-channel-call-actions .button-exit,
 .private-channel-call .private-channel-call-actions .button-join,
 .form.deprecated .btn-primary,
+.create-guild-container.deprecated .join-server .btn-primary,
 .region-select {
 	border: 1px solid var(--accent);
 	background-color: transparent;
 	color:var(--accent);
 	opacity: 1;
+}
+.region-select:hover .region-select-inner,
+.region-select:hover button {
+	border:none
+}
+
+.region-select .region-select-name,
+.region-select button,
+.region-select {
+	color: var(--accent);
+	border-radius: 5px;
+}
+
+.create-guild-container.deprecated .join-server .link-container input {
+	color: var(--notif)
 }
 
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT:hover,
@@ -2149,10 +2165,70 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .private-channel-call .private-channel-call-actions .button-exit:hover,
 .private-channel-call .private-channel-call-actions .button-join:hover,
 .form.deprecated .btn-primary:hover,
-.region-select button:hover {
+.create-guild-container.deprecated .join-server .btn-primary:hover,
+.region-select:hover,
+.region-select:hover button,
+.region-select:hover .region-select-name {
 	transition: opacity 5s ease;
 	border: 1px solid var(--accent);
 	background-color: var(--accent)!important;
 	color:var(--dark-secondary);
 	opacity: 0.75;
+}
+
+.avatar-large[style*="81440962496172032"] + .comment .message.first .body .username-wrapper .user-name,
+.member > .avatar-small[style*="81440962496172032"] + .member-inner .member-username,
+.member > .avatar-small[style*="81440962496172032"] + .member-inner .member-username-inner,
+.avatar-small[style*="81440962496172032"] + .channel-name {
+	color: pink !important;
+	font-family: 'Comic Sans MS' !important;
+}
+
+.avatar-large[style*="184632227894657025"] + .comment .message.first .body .username-wrapper .user-name,
+.member > .avatar-small[style*="184632227894657025"] + .member-inner .member-username,
+.member > .avatar-small[style*="184632227894657025"] + .member-inner .member-username-inner,
+.avatar-small[style*="184632227894657025"] + .channel-name {
+	color: #4fff00 !important;
+	font-family: 'Comic Sans MS' !important;
+}
+
+.avatar-large[style*="132368482120499201"] + .comment .message.first .body .username-wrapper .user-name,
+.member > .avatar-small[style*="132368482120499201"] + .member-inner .member-username,
+.member > .avatar-small[style*="132368482120499201"] + .member-inner .member-username-inner,
+.avatar-small[style*="132368482120499201"] + .channel-name {
+	color: #d9c252 !important;
+	font-family: 'Comic Sans MS' !important;
+}
+
+.avatar-large[style*="305227385979273217"] + .comment .message.first .body .username-wrapper .user-name,
+.member > .avatar-small[style*="305227385979273217"] + .member-inner .member-username,
+.member > .avatar-small[style*="305227385979273217"] + .member-inner .member-username-inner,
+.avatar-small[style*="305227385979273217"] + .channel-name,
+.avatar-large[style*="151344471957569536"] + .comment .message.first .body .username-wrapper .user-name,
+.member > .avatar-small[style*="151344471957569536"] + .member-inner .member-username,
+.member > .avatar-small[style*="151344471957569536"] + .member-inner .member-username-inner,
+.avatar-small[style*="151344471957569536"] + .channel-name {
+	color: #9f8bf1 !important;
+	font-family: 'Comic Sans MS' !important;
+}
+
+.avatar-large[style*="86890631690977280"] + .comment .message.first .body .username-wrapper .user-name,
+.member > .avatar-small[style*="86890631690977280"] + .member-inner .member-username,
+.member > .avatar-small[style*="86890631690977280"] + .member-inner .member-username-inner,
+.avatar-small[style*="86890631690977280"] + .channel-name {
+	color: #E8506A !important;
+	font-family: 'Comic Sans MS' !important;
+}
+
+.theme-dark .private-channel-recipients-invite .friend.selected,
+.theme-dark .private-channel-recipients-invite .friend.selected:hover {
+	background: var(--dark-secondary);
+	border-left: 1px solid var(--accent);
+}
+.theme-dark .private-channel-recipients-invite .friend:hover {
+	background: var(--dark-secondary);
+	border-left: 1px solid #fff;
+}
+.theme-dark .private-channel-recipients-invite .friend {
+	background: var(--dark-primary)
 }
