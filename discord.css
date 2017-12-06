@@ -103,6 +103,9 @@
 .theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code, .theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code * {
     font-family: Menlo,Consolas,Monaco,monospace !important;
 }
+.contentSelectedText-3j5CXt .flex-lFgbSz {
+	background-color: #202020;
+}
 .app,
 .connecting {
 	min-height: 0px;
@@ -846,10 +849,10 @@ div.tooltip.tooltip-normal,
 	background: rgba(219,221,225,.2)
 }
 .theme-dark.context-menu .item-subMenu {
-	background: url(/assets/1988164a7c55346d32117b151f4e319d.svg) 155px 50% no-repeat var(--dark-primary)
+	background-color: var(--dark-primary)
 }
 .theme-dark.context-menu .item-subMenu:hover {
-	background: url(/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat var(--accent)
+	background-color: var(--accent)
 }
 .theme-dark.context-menu .context-menu {
 	background: var(--dark-primary);
@@ -1120,6 +1123,10 @@ background: var(--dark-primary)!important;
 .avatarNormal-3luwna {
 	border: none;
 	border-radius: 5% !important
+}
+.avatarWrapperNormal-1wU7gX:hover,
+.avatarWrapperNormal-1wU7gX:hover .avatarHint-2i5XWK {
+	border-radius: 25% !important
 }
 .user-popout .avatar-wrapper .avatar-popout,
 .userPopout-4pfA0d {
@@ -2295,7 +2302,11 @@ divbutton-NA7MEa:hover,
 .region-select button:hover,
 .theme-dark .buttonPrimaryInvertedDefault-1XlpVq:hover,
 .theme-dark .buttonPrimaryInvertedDisabled-pTWgC9:hover,
-.theme-dark .buttonPrimaryInvertedSubmitting-3j1QEG:hover {
+.theme-dark .buttonPrimaryInvertedSubmitting-3j1QEG:hover,
+.theme-dark .buttonPrimaryLinkDefault-1PQflF:hover,
+.theme-dark .buttonPrimaryLinkDisabled-3Ey7-S:hover,
+.theme-dark .buttonPrimaryLinkSubmitting-RbBzR4:hover,
+.buttonBrandFilledDefault-2Rs6u5:hover {
 	transition: opacity 5s ease;
 	border: 1px solid var(--accent);
 	background-color: var(--accent)!important;
