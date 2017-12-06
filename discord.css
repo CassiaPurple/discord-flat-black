@@ -739,8 +739,7 @@ div.tooltip.tooltip-normal,
 }
 #autocomplete-popout .row.selected,
 #autocomplete-popout .row:hover {
-	background: var(--dark-primary);
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+	background: #202020;
 }
 #autocomplete-popout .row.selected a,
 #autocomplete-popout .row:hover a {
@@ -1532,8 +1531,7 @@ background: var(--dark-primary)!important;
 }
 /* Current textchannel */
 .contentSelectedText-3j5CXt {
-	background: var(--dark-primary);
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+	background: #202020;
 	border-left: 2px solid var(--accent);
 }
 /* Current channels */
@@ -1557,14 +1555,12 @@ background: var(--dark-primary)!important;
 .userHovered-3tfm93:active {
 	transition: all 250ms ease!important;
 	border-left: 2px solid #fff;
-	background: var(--dark-primary);
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+	background: #202020;
 }
 .contentHoveredText-2HYGIY {
 	transition: all 250ms ease!important;
 	border-left: 2px solid var(--accent);
-	background: var(--dark-primary);
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+	background: #202020;
 }
 /* Hide the unread dot */
 .unread-23Kvxk {
@@ -1584,8 +1580,7 @@ background: var(--dark-primary)!important;
 .private-channels .channel a:hover,
 .private-channels.alt .channel a:hover,
 .private-channels .channel:hover a {
-	background: var(--dark-primary);
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+	background: #202020;
 	border-left: 2px solid var(--accent);
 	transition: all 250ms ease!important;
 }
