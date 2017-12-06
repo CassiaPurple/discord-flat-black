@@ -433,7 +433,8 @@
 	background-color: transparent !important;
 	color: var(--accent);
 }
-.theme-dark .chat .content form .channel-textarea-inner {
+
+.theme-dark .chat .content form .inner-3if5cm {
 	border-color: var(--dark-primary);
 	background: var(--dark-primary);
 	-webkit-box-shadow: 0 2px 10 0 rgba(0,0,0,.5);
@@ -441,11 +442,11 @@
 	-webkit-border-radius: 5px;
 	border-radius: 0px;
 }
-.theme-dark .chat .content form .channel-textarea-inner .channel-textarea-upload {
+.theme-dark .chat .content form .inner-3if5cm .inner-3if5cm {
 	background-color: var(--dark-primary);
 	border-right: 2px solid var(--dark-primary)
 }
-.theme-dark .chat .content form .channel-textarea-inner .channel-textarea-upload:hover {
+.theme-dark .chat .content form .inner-3if5cm .inner-3if5cm:hover {
 	background-color: var(--dark-primary)
 }
 .message-group a {
@@ -738,7 +739,8 @@ div.tooltip.tooltip-normal,
 }
 #autocomplete-popout .row.selected,
 #autocomplete-popout .row:hover {
-	background: #202020;
+	background: var(--dark-primary);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 #autocomplete-popout .row.selected a,
 #autocomplete-popout .row:hover a {
@@ -1507,7 +1509,7 @@ background: var(--dark-primary)!important;
 	background-color: var(--dark-primary);
 	color: #fff;
 }
-.message-group .edit-message .channel-textarea-inner {
+.message-group .edit-message .inner-3if5cm {
 	border: none;
 	background-color: var(--dark-primary);
 	color: #fff;
@@ -1530,7 +1532,8 @@ background: var(--dark-primary)!important;
 }
 /* Current textchannel */
 .contentSelectedText-3j5CXt {
-	background: #202020;
+	background: var(--dark-primary);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 	border-left: 2px solid var(--accent);
 }
 /* Current channels */
@@ -1554,12 +1557,14 @@ background: var(--dark-primary)!important;
 .userHovered-3tfm93:active {
 	transition: all 250ms ease!important;
 	border-left: 2px solid #fff;
-	background: #202020;
+	background: var(--dark-primary);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .contentHoveredText-2HYGIY {
 	transition: all 250ms ease!important;
 	border-left: 2px solid var(--accent);
-	background: #202020;
+	background: var(--dark-primary);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 /* Hide the unread dot */
 .unread-23Kvxk {
@@ -1579,7 +1584,8 @@ background: var(--dark-primary)!important;
 .private-channels .channel a:hover,
 .private-channels.alt .channel a:hover,
 .private-channels .channel:hover a {
-	background: #202020;
+	background: var(--dark-primary);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 	border-left: 2px solid var(--accent);
 	transition: all 250ms ease!important;
 }
@@ -1590,7 +1596,8 @@ background: var(--dark-primary)!important;
 }
 /* Members search box */
 .theme-dark .ui-search-bar {
-	background: #202020;
+	background: var(--dark-primary);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 /* Role Color Picker & Member list Role filter & Audit log search */
 .theme-dark .ui-color-picker-custom,
@@ -1678,7 +1685,8 @@ background: var(--dark-primary)!important;
 	border: none;
 }
 .theme-dark .chat .has-more button:hover {
-	background-color: #202020;
+	background: var(--dark-primary);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 	box-shadow: none;
 }
 /* upload modal */
@@ -1823,7 +1831,7 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 .theme-dark .title-qAcLxz,
 .theme-dark .body-3rkFrF,
 .theme-dark .footer-2J5zqP {
-	background:var(--dark-primary);
+	background:var(--dark-primary) !important;
 }
 
 .titleBar-3_fDwJ {
@@ -1838,6 +1846,10 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 
 .image-EVRGPw, .mask-2vyqAW {
 	-webkit-mask: none;
+}
+
+.theme-dark .private-channel-call {
+	background-color:var(--dark-primary) !important;
 }
 
 /* Alternate fix (sets the channel topic as draggable) *//*
@@ -1884,241 +1896,240 @@ div.chat.flex-vertical.flex-spacer.private .channel-members-wrap {
 	background-color: var(--accent);
 }
 
-/*user profile modal*/
-#user-profile-modal .header:after {
-	visibility: hidden;
-}
-.avatar-wrapper {
-	background-color: transparent!important;
-}
-#user-profile-modal .header {
-	background-color: var(--dark-primary)!important;
-	background-image: none;
-	width: 200px;
-	height: 546px;
-	overflow: hidden;
-}
-#user-profile-modal {
-	display: flex;
-	flex-direction: row;
-	width: 750px;
-}
-.tab-bar-container {
-	display: inline!important;
-	padding: 0;
-	margin: 0;
-	background: var(--dark-primary)!important;
-}
-#user-profile-modal .tab-bar .tab-bar-item.selected {
-	color: var(--accent);
-}
-#user-profile-modal .guilds .guild:hover {
-	background: #202020;
-	color: #fff;
-}
-#user-profile-modal .tab-bar .tab-bar-item {
-	color: #FFF;
-	background: var(--dark-primary)!important;
-}
-#user-profile-modal .scroller,
-#user-profile-modal >
-div.tab-bar-container >
-div {
-	width: 350px;
-}
-#user-profile-modal .header .additional-actions-icon:after {
-	content: '';
-	width: 18px;
-	height: 18px;
-	display: inline-block;
-	z-index: 5;
-	position: absolute;
-	top: 15px;
-	right: calc(50% - 9px);
-	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_white_24px.svg);
-	background-size: cover;
-	transition: all .2s ease;
-}
-#user-profile-modal .header .additional-actions-icon:hover:after {
-	width: 24px;
-	height: 24px;
-	top: 12px;
-	right: calc(50% - 12px);
-	transition: all .2s ease;
-}
-#user-profile-modal .header .additional-actions-icon:before {
-	content: 'Actions';
-	color: #fff;
-	line-height: 24px;
-	transition: all .2s ease;
-}
-#user-profile-modal .header .additional-actions-icon:hover:before {
-	font-size: 20px;
-	line-height: 18px;
-	transition: all .2s ease;
-}
-#user-profile-modal .header .additional-actions-icon {
-	left: 0px;
-	top: 0px;
-	display: block;
-	width: 203px;
-	background-image: linear-gradient(to bottom, var(--dark-primary) 0%, var(--dark-primary) 100%);
-	text-align: center;
-	line-height: 24px;
-	transition: background-image .2s ease;
-}
-#user-profile-modal .tab-bar-container {
-	box-shadow: none;
-	padding-right: 332px;
-	border-top-right-radius: 5px;
-	border-bottom: 1px solid var(--dark-primary);
-}
-#user-profile-modal .guilds .section .connected-accounts .connected-account {
-	margin-left: 20px;
-}
-#user-profile-modal >
-div.tab-bar-container >
-div {
-	margin: 0!important;
-	left: 230px!important;
-	position: absolute;
-	background-color: var(--dark-primary)!important;
-	z-index: 99!important;
-	width: 335px;
-	border-top-right-radius: 5px;
-}
-#user-profile-modal .header .header-info .badge-premium {
-	position: absolute;
-	top: -150px;
-	left: 15px;
-}
-#user-profile-modal .actions .btn.add-friend {
-	position: absolute;
-	left: 30px;
-	top: 30em;
-}
-#user-profile-modal .empty {
-	position: relative;
-	width: 660px;
-	right: 545px;
-	padding-left: 219px;
-	padding-right: 218px;
-	border-bottom-right-radius: 5px;
-	border-top-right-radius: 5px;
-}
-#user-profile-modal .empty .spinner {
-	margin: 33px;
-}
-#user-profile-modal .header .header-info .header-info-inner {
-	position: absolute;
-}
-#user-profile-modal .guilds .avatar-large {
-	background-color: transparent;
-}
+/* Kaos will fix later, or if someone else wants to go ahead */
+	/*user profile modal*/
+	#user-profile-modal .header:after {
+		visibility: hidden;
+	}
+	.avatar-wrapper {
+		background-color: transparent!important;
+	}
+	#user-profile-modal .header {
+		background-color: var(--dark-primary)!important;
+		background-image: none;
+		width: 200px;
+		height: 546px;
+		overflow: hidden;
+	}
+	#user-profile-modal {
+		display: flex;
+		flex-direction: row;
+		width: 750px;
+	}
+	.tab-bar-container {
+		display: inline!important;
+		padding: 0;
+		margin: 0;
+		background: var(--dark-primary)!important;
+	}
+	#user-profile-modal .tab-bar .tab-bar-item.selected {
+		color: var(--accent);
+	}
+	#user-profile-modal .guilds .guild:hover {
+		background: #202020;
+		color: #fff;
+	}
+	#user-profile-modal .tab-bar .tab-bar-item {
+		color: #FFF;
+		background: var(--dark-primary)!important;
+	}
+	#user-profile-modal .scroller,
+	#user-profile-modal >
+	div.tab-bar-container >
+	div {
+		width: 350px;
+	}
+	#user-profile-modal .header .additional-actions-icon:after {
+		content: '';
+		width: 18px;
+		height: 18px;
+		display: inline-block;
+		z-index: 5;
+		position: absolute;
+		top: 15px;
+		right: calc(50% - 9px);
+		background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_white_24px.svg);
+		background-size: cover;
+		transition: all .2s ease;
+	}
+	#user-profile-modal .header .additional-actions-icon:hover:after {
+		width: 24px;
+		height: 24px;
+		top: 12px;
+		right: calc(50% - 12px);
+		transition: all .2s ease;
+	}
+	#user-profile-modal .header .additional-actions-icon:before {
+		content: 'Actions';
+		color: #fff;
+		line-height: 24px;
+		transition: all .2s ease;
+	}
+	#user-profile-modal .header .additional-actions-icon:hover:before {
+		font-size: 20px;
+		line-height: 18px;
+		transition: all .2s ease;
+	}
+	#user-profile-modal .header .additional-actions-icon {
+		left: 0px;
+		top: 0px;
+		display: block;
+		width: 203px;
+		background-image: linear-gradient(to bottom, var(--dark-primary) 0%, var(--dark-primary) 100%);
+		text-align: center;
+		line-height: 24px;
+		transition: background-image .2s ease;
+	}
+	#user-profile-modal .tab-bar-container {
+		box-shadow: none;
+		padding-right: 332px;
+		border-top-right-radius: 5px;
+		border-bottom: 1px solid var(--dark-primary);
+	}
+	#user-profile-modal .guilds .section .connected-accounts .connected-account {
+		margin-left: 20px;
+	}
+	#user-profile-modal >
+	div.tab-bar-container >
+	div {
+		margin: 0!important;
+		left: 230px!important;
+		position: absolute;
+		background-color: var(--dark-primary)!important;
+		z-index: 99!important;
+		width: 335px;
+		border-top-right-radius: 5px;
+	}
+	#user-profile-modal .header .header-info .badge-premium {
+		position: absolute;
+		top: -150px;
+		left: 15px;
+	}
+	#user-profile-modal .actions .btn.add-friend {
+		position: absolute;
+		left: 30px;
+		top: 30em;
+	}
+	#user-profile-modal .empty {
+		position: relative;
+		width: 660px;
+		right: 545px;
+		padding-left: 219px;
+		padding-right: 218px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	#user-profile-modal .empty .spinner {
+		margin: 33px;
+	}
+	#user-profile-modal .header .header-info .header-info-inner {
+		position: absolute;
+	}
+	#user-profile-modal .guilds .avatar-large {
+		background-color: transparent;
+	}
+	
+	/* Fix the "No mutual servers" thing to be grey */
+	#user-profile-modal .empty {
+		background: var(--dark-primary);
+	}
+	.header-info {
+		position: absolute;
+		width: 215px!important;
+		left: 0px;
+		text-align: center;
+		margin-top: -80px;
+		color: white!important;
+	}
+	.header-info-inner,
+	.header-info-inner.activity {
+		width: 215px!important;
+		color: white;
+	}
+	.header-info-inner .discord-tag {
+		color: white!important;
+	}
+	.header-info-inner .activity {
+		padding-left: 0;
+		padding-right: 0;
+		width: 215px!important;
+	}
+	.header-info .profile-badge:not(.badge-premium) {
+		width: 100%!important;
+		margin-top: 150px;
+		margin-right: 0!important;
+		background-position-x: 50%!important;
+		height: 50px!important;
+		background-size: contain;
+		background-color: var(--dark-primary);
+		z-index: 2;
+		transition: all .2s ease;
+	}
+	.header-info .profile-badge:not(.badge-premium):before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 50px;
+		margin-left: 0%;
+		box-shadow: var(--dark-primary) 0px 0px 20px 0px;
+		z-index: 1;
+		transition: all .2s ease;
+	}
+	.header-info .profile-badge:hover:not(.badge-premium) {
+		background-color: var(--dark-primary);
+		transition: all .2s ease;
+	}
+	.header-info .profile-badge:hover:not(.badge-premium):before {
+		box-shadow: var(--dark-primary) 0px 0px 20px 0px;
+		transition: all .2s ease;
+	}
+	#user-profile-modal >
+	div.scroller-wrap.fade {
+		height: 487px!important;
+		top: 55px;
+		border-top: var(--dark-primary) 4px solid!important;
+		margin-left: -3px;
+		left: -542px;
+		border-bottom-right-radius: 5px;
+	}
+	#user-profile-modal .scroller {
+		border-bottom-right-radius: 5px;
+		width: 535px;
+	}
+	#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(odd) {
+		margin-left: 18px;
+	}
+	#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(even) {
+		margin-right: 15px;
+	}
+	#user-profile-modal .scroller .section:nth-child(2) {
+		margin-right: 5px;
+		margin-left: 10px;
+	}
+	.btn-add-friend {
+		left: 0!important;
+		position: absolute!important;
+	}
+	#user-profile-modal .scroller {
+		background: var(--dark-primary) 
+	}
+	#user-profile-modal .guilds .section .connected-accounts .connected-account {
+		-webkit-border-radius: 3px;
+		border-radius: 0px;
+		border: 0px!important;
+		-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
+	}
+	#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name {
+		font-size: 18px;
+		color: #fff;
+	}
+	#user-profile-modal .guilds .section+.section {
+		border-top: 1px solid var(--dark-primary);
+	}
+/**/
 
-/* Fix the "No mutual servers" thing to be grey */
-#user-profile-modal .empty {
-	background: var(--dark-primary);
-}
-.header-info {
-	position: absolute;
-	width: 215px!important;
-	left: 0px;
-	text-align: center;
-	margin-top: -80px;
-	color: white!important;
-}
-.header-info-inner,
-.header-info-inner.activity {
-	width: 215px!important;
-	color: white;
-}
-.header-info-inner .discord-tag {
-	color: white!important;
-}
-.header-info-inner .activity {
-	padding-left: 0;
-	padding-right: 0;
-	width: 215px!important;
-}
-.header-info .profile-badge:not(.badge-premium) {
-	width: 100%!important;
-	margin-top: 150px;
-	margin-right: 0!important;
-	background-position-x: 50%!important;
-	height: 50px!important;
-	background-size: contain;
-	background-color: var(--dark-primary);
-	z-index: 2;
-	transition: all .2s ease;
-}
-.header-info .profile-badge:not(.badge-premium):before {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 50px;
-	margin-left: 0%;
-	box-shadow: var(--dark-primary) 0px 0px 20px 0px;
-	z-index: 1;
-	transition: all .2s ease;
-}
-.header-info .profile-badge:hover:not(.badge-premium) {
-	background-color: var(--dark-primary);
-	transition: all .2s ease;
-}
-.header-info .profile-badge:hover:not(.badge-premium):before {
-	box-shadow: var(--dark-primary) 0px 0px 20px 0px;
-	transition: all .2s ease;
-}
-#user-profile-modal >
-div.scroller-wrap.fade {
-	height: 487px!important;
-	top: 55px;
-	border-top: var(--dark-primary) 4px solid!important;
-	margin-left: -3px;
-	left: -542px;
-	border-bottom-right-radius: 5px;
-}
-#user-profile-modal .scroller {
-	border-bottom-right-radius: 5px;
-	width: 535px;
-}
-#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(odd) {
-	margin-left: 18px;
-}
-#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(even) {
-	margin-right: 15px;
-}
-#user-profile-modal .scroller .section:nth-child(2) {
-	margin-right: 5px;
-	margin-left: 10px;
-}
-.scroller.guilds {
-	width: 450px;
-}
-.btn-add-friend {
-	left: 0!important;
-	position: absolute!important;
-}
-#user-profile-modal .scroller {
-	background: var(--dark-primary) 
-}
-#user-profile-modal .guilds .section .connected-accounts .connected-account {
-	-webkit-border-radius: 3px;
-	border-radius: 0px;
-	border: 0px!important;
-	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
-}
-#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name {
-	font-size: 18px;
-	color: #fff;
-}
-#user-profile-modal .guilds .section+.section {
-	border-top: 1px solid var(--dark-primary);
-}
-
-.header-2Lg0Oe,
+.header-1tSljs,
 .tabBarContainer-3RVZc-,
 .empty-2dxE7O,
 .activity-1Sr8Y2 {
@@ -2130,9 +2141,9 @@ div.scroller-wrap.fade {
     color: var(--accent);
 }
 
-/* New Profile Modal */
+/* New Profile Modual */
 
-.root-2sNHUF {
+.modal-2LIEKY .inner-1_1f7b > .flex-lFgbSz {
 	width:768px;
 	height:512px;
 	flex-direction: row;
@@ -2142,7 +2153,7 @@ div.scroller-wrap.fade {
 .topSectionPlaying-3jAH9b,
 .topSectionNormal-2LlRG1,
 .topSectionStreaming-3rIBIm {
-	background: transparent;
+	background-color: transparent !important;
 	display: flex;
 	flex-direction: column;
 }
@@ -2190,7 +2201,7 @@ div.scroller-wrap.fade {
 }
 
 .activityProfile-2pymp0 {
-	padding:0;
+	padding:0 !important;
 	width:256px;
 	display:flex;
 	flex-direction: column;
@@ -2237,12 +2248,15 @@ div.scroller-wrap.fade {
 	text-overflow:clip;
 }
 
-.theme-dark .body-3_tdh6 .scroller-fzNley {
-	max-height: 450px;
-}
-
 .image-EVRGPw {
 	border-radius: 25%;
+}
+
+.additionalActionsIcon-WiVlux {
+	position:absolute;
+	top:10px;
+	right:10px;
+	z-index:9999;
 }
 
 /* BUTTONS */
@@ -2255,8 +2269,6 @@ div.scroller-wrap.fade {
 .private-channel-call .private-channel-call-actions .button-exit,
 .private-channel-call .private-channel-call-actions .button-join,
 .form.deprecated .btn-primary,
-.create-guild-container.deprecated .join-server .btn-primary,
-.region-select,
 .region-select,
 .theme-dark .buttonPrimaryInvertedDefault-1XlpVq,
 .theme-dark .buttonPrimaryInvertedDisabled-pTWgC9,
@@ -2265,21 +2277,6 @@ div.scroller-wrap.fade {
 	background-color: transparent;
 	color:var(--accent);
 	opacity: 1;
-}
-.region-select:hover .region-select-inner,
-.region-select:hover button {
-	border:none
-}
-
-.region-select .region-select-name,
-.region-select button,
-.region-select {
-	color: var(--accent);
-	border-radius: 5px;
-}
-
-.create-guild-container.deprecated .join-server .link-container input {
-	color: var(--notif)
 }
 
 .theme-dark .buttonPrimaryFilledDefault-ekmMaT:hover,
@@ -2295,10 +2292,6 @@ divbutton-NA7MEa:hover,
 .private-channel-call .private-channel-call-actions .button-exit:hover,
 .private-channel-call .private-channel-call-actions .button-join:hover,
 .form.deprecated .btn-primary:hover,
-.create-guild-container.deprecated .join-server .btn-primary:hover,
-.region-select:hover,
-.region-select:hover button,
-.region-select:hover .region-select-name,
 .region-select button:hover,
 .theme-dark .buttonPrimaryInvertedDefault-1XlpVq:hover,
 .theme-dark .buttonPrimaryInvertedDisabled-pTWgC9:hover,
@@ -2314,15 +2307,39 @@ divbutton-NA7MEa:hover,
 	opacity: 0.75;
 }
 
-.theme-dark .private-channel-recipients-invite .friend.selected,
-.theme-dark .private-channel-recipients-invite .friend.selected:hover {
-	background: var(--dark-secondary);
-	border-left: 1px solid var(--accent);
+/* Rounded Squares for Roles */
+.role-3rahR_ {
+	border-radius:10%;
 }
-.theme-dark .private-channel-recipients-invite .friend:hover {
-	background: var(--dark-secondary);
-	border-left: 1px solid #fff;
+
+.roleCircle-3-vPZq {
+	border-radius:10%;
 }
-.theme-dark .private-channel-recipients-invite .friend {
-	background: var(--dark-primary)
+
+.roleName-DUQZ9m {
+	margin:0;
+	position:relative;
+	top:0;
+	left:0;
+}
+
+/* Fix dual screen SS menu */
+.size-29enIJ {
+	width: 1024px;
+	height: 564px;
+}
+
+.theme-dark .modal-3HOjGZ .flex-lFgbSz .flex-lFgbSz:first-of-type + .flex-lFgbSz .scrollerWrap-2uBjct .scroller-fzNley .flex-lFgbSz {
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.theme-dark .modal-3HOjGZ .flex-lFgbSz .flex-lFgbSz:first-of-type + .flex-lFgbSz .scrollerWrap-2uBjct .scroller-fzNley .flex-lFgbSz .tile-2GUmAV {
+	flex: 1 1 0 !important;
+}
+
+.theme-dark .modal-3HOjGZ .flex-lFgbSz .flex-lFgbSz:first-of-type + .flex-lFgbSz .scrollerWrap-2uBjct .scroller-fzNley .flex-lFgbSz .tile-2GUmAV .flex-lFgbSz {
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 auto !important;
 }
